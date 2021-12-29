@@ -18,7 +18,7 @@ export default function Home() {
         return <Contact />;
       case "resume":
         return <Experience />;
-      case "expierence":
+      case "experience":
         return <Resume />;
       case "about":
         return <About />;
@@ -33,7 +33,7 @@ export default function Home() {
     duration: 0.7,
   };
 
-  const menu = ["about", "works", "resume", "expierence", "contact"];
+  const menu = ["about", "works", "resume", "experience", "contact"];
 
   return (
     <>
@@ -67,7 +67,7 @@ export default function Home() {
           </li>
           <li
             className="Words-line cursor-pointer"
-            onClick={() => setSelectedId("expierence")}
+            onClick={() => setSelectedId("experience")}
           >
             <p>Resume</p>
             <p>Experience</p>

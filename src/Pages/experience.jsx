@@ -59,7 +59,7 @@ export default function Experience() {
               key={idx}
               className="w-full p-4 lg:p-8 overflow-hidden border border-black hover:border-blue-600 transition mb-8 last:mb-0"
             >
-              <div className="mb-3 lg:mb-0 lg:h-20 justify-between">
+              <div className="mb-3 lg:mb-0 lg:h-20 flex justify-between">
                 <div className="">
                   <h5 className="text-xl font-bold text-gray-900">
                     {item.position}
@@ -84,7 +84,7 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <div className="hidden ml-3">
+                <div className="hidden lg:block ml-3">
                   <img
                     className="object-cover w-full h-10 rounded-lg object-fit"
                     src={item.img}
