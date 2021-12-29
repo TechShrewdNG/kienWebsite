@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowDown, ArrowRight, ExternalLink, Linkedin } from "react-feather";
+import { ArrowDown } from "react-feather";
+import PageTitle from "../Components/pageTitle";
 
 export default function Resume() {
   const data = [
@@ -10,10 +11,10 @@ export default function Resume() {
         { skill: "HTML5/CSS3/SCSS/SASS" },
         {
           skill:
-            "Using library, frameworks like TaiwindCSS, Material UI, Bootstrap...",
+            "Using the libraries, frameworks like TaiwindCSS, Material UI, Bootstrap, Framer Motion, ChartJs...",
         },
         { skill: "Javascript, jQuery, PHP" },
-        { skill: "Angular, ReactJs, TypeScript" },
+        { skill: "Angular, ReactJs with TypeScript" },
         { skill: "WordPress theme development" },
       ],
     },
@@ -23,10 +24,17 @@ export default function Resume() {
       body: [
         { skill: "NodeJs, ExpressJs" },
         { skill: "MySQL, MongoDB, Database design" },
-        { skill: "AWS S3, AWS Lambda, CDN integration" },
-        { skill: "Restful API" },
+        {
+          skill:
+            "Amazon, Google Cloud services integration: AWS S3, AWS Lambda, CDN, Google APIs... ",
+        },
+        { skill: "Restful API design" },
         { skill: "Git" },
         { skill: "Setup and configure VPS (CentOS, Ubuntu)" },
+        {
+          skill:
+            "Security implementation for backend, server (CORS, JWT Authorization...)",
+        },
       ],
     },
     {
@@ -36,23 +44,25 @@ export default function Resume() {
         { skill: "UX/UI design with Sketch App, XD" },
         { skill: "Photoshop" },
         { skill: "Illustrator" },
-        { skill: "After Effects (2D Motion graphic)" },
+        { skill: "After Effects (2D Motion Graphic)" },
       ],
     },
     {
       field: "Marketing",
       yearExp: "> 3 years",
       body: [
-        { skill: "Manage marketing team, content team" },
-        { skill: "Planing marketing strategy, set the KPIs for team member" },
-        { skill: "Content planing for social channels" },
+        { skill: "Worked as a digital marketing manager before" },
+        { skill: "Planing marketing strategy, set the KPIs for team members" },
+        { skill: "Tracking goals and manage marketing team, content team" },
+        { skill: "Content planing for social channels (Facebook, Youtube)" },
         { skill: "SEO, Facebook Ads, Google Ads management" },
         { skill: "Email marketing" },
         {
           skill:
-            "Website analysis, giving advices for develop team to improve the product",
+            "Website analysis, working with the product team to improve product",
         },
-        { skill: "Working with media agency, newspapers/magazine" },
+        { skill: "A/B testing implementation" },
+        { skill: "Working with media agencies, newspapers/magazines" },
       ],
     },
     {
@@ -60,50 +70,60 @@ export default function Resume() {
       yearExp: "> 3 years",
       body: [
         {
-          skill:
-            "Able to communicate in English (good at speaking, listening, reading, writing)",
+          skill: "Able to communicate in English",
         },
         { skill: "Can read/write technical document in English" },
       ],
     },
     {
-      field: "Others",
+      field: "Other skills",
       yearExp: "> 3 years",
       body: [
         { skill: "Hand drawing" },
         { skill: "Photography" },
         {
           skill:
-            "Writing in tech field (was a collaborator for tinhte.vn, eChip, LBVMVT magazine since 2000s)",
+            "Writing in the tech field (was a collaborator for tinhte.vn, eChip, LBVMVT magazine since the 2000s)",
+        },
+      ],
+    },
+    {
+      field: "Education",
+      yearExp: "> 3 years",
+      body: [
+        {
+          skill:
+            "HCMC University of Information Technology - Bachelor degree of Computer Science.",
+        },
+        {
+          skill:
+            "Frontend, Backend Development - Janeto Traning Center & Cybersoft Academy with excellent degree.",
+        },
+        {
+          skill:
+            "Multimedia School - I studied Sketch, Adobe Illustrator, UX/UI Design, 2D Motion Graphic with After Effects from KeyFrame tranning center.",
         },
       ],
     },
   ];
 
   return (
-    <div className="">
-      <div className="relative flex items-center justify-center">
-        <a
-          href="https://kien.app/KienPham_CV.pdf"
-          rel="noreferrer"
-          className="lg:absolute right-0 top-0 flex items-center inline-block px-4 py-2 border border-black hover:bg-blue-600 hover:text-white transition"
-        >
-          <ArrowDown size={20} strokeWidth={0.9} className="mr-2" />
-          Download Resume{" "}
-        </a>
-      </div>
+    <div className="content font-light text-gray-600">
+      <PageTitle title="My Experience" />
 
-      <div className="relative mt-5 text-left">
+      <div className="relative text-left">
         {data.map((item, idx) => {
           return (
-            <div key={idx} className="flex relative mb-5">
+            <div
+              key={idx}
+              className="w-full p-4 lg:p-8 overflow-hidden border border-black hover:border-blue-600 transition mb-8 last:mb-0"
+            >
               <div className="hidden md:block ">
-                <div className="font-bold italic w-20">{item.field}</div>
-                {/* <div className="md:flex space-x-1 text-xs">{item.yearExp}</div> */}
+                <div className="font-bold uppercase mb-5">{item.field}</div>
               </div>
 
-              <div className="ml-10 pr-3">
-                <ul className="list-disc text-sm">
+              <div className="ml-5">
+                <ul className="list-disc">
                   {item.body.map((skill, id) => {
                     return (
                       <li className="mb-1" key={id}>
@@ -112,7 +132,6 @@ export default function Resume() {
                     );
                   })}
                 </ul>
-                {/* <div className="mb-10 text-sm"></div> */}
               </div>
             </div>
           );

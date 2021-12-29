@@ -1,179 +1,141 @@
 import React, { useState } from "react";
-import {
-  ArrowDown,
-  ArrowDownRight,
-  ArrowRight,
-  ArrowUp,
-  ArrowUpRight,
-  AtSign,
-  Briefcase,
-  Check,
-  CheckSquare,
-  Code,
-  Cpu,
-  File,
-} from "react-feather";
+import { X } from "react-feather";
 import About from "./Pages/about";
 import Contact from "./Pages/contact";
 import Experience from "./Pages/experience";
 import Resume from "./Pages/resume";
 import Works from "./Pages/works";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  const [page, setPage] = useState("about");
+  const [selectedId, setSelectedId] = useState(null);
 
   const showContent = () => {
-    switch (page) {
+    switch (selectedId) {
       case "works":
         return <Works />;
       case "contact":
         return <Contact />;
       case "resume":
-        return <Resume />;
-      case "expierence":
         return <Experience />;
-      default:
+      case "expierence":
+        return <Resume />;
+      case "about":
         return <About />;
+      default:
+        return null;
     }
   };
 
+  const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+    duration: 0.7,
+  };
+
+  const menu = ["about", "works", "resume", "expierence", "contact"];
+
   return (
     <>
-      <div className="flex flex-wrap justify-center">
-        <section
-          onClick={() => setPage("about")}
-          className="cursor-pointer mr-3 mb-3 grow hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1"
+      <div className="hidden lg:flex justify-center items-center h-screen">
+        <motion.ul
+          initial="hidden"
+          animate="visible"
+          variants={list}
+          className="Words"
         >
-          <div className="bg-black w-full h-28 pt-4">
-            <div className="border-t text-white text-3xl font-semibold pt-2 pb-4 px-5 flex justify-between items-center">
-              <div className="flex flex-col">
-                <div className="text-2xl">Hello</div>
-                <div>I'm Kien</div>
-              </div>
-              <div className="flex font-medium text-3xl">
-                <p className=" rounded-full p-3 bg-red-600 w-10 h-10 flex justify-center items-center mr-2">
-                  K
-                </p>
-                <p className=" rounded-full p-3 bg-green-700 w-10 h-10 flex justify-center items-center">
-                  P
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          onClick={() => setPage("works")}
-          className="cursor-pointer mr-3 mb-3 w-full lg:w-96 hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1"
-        >
-          <div className="bg-black  h-28 pt-4">
-            <div className="text-white font-semibold pt-2 pb-4 pr-1 px-5 flex justify-between items-center">
-              <div className="flex flex-col">
-                <div className="text-4xl mb-2">Works</div>
-                <div className="flex font-medium text-lg">
-                  <p className="rounded-full p-3 bg-green-700 w-7 h-7 flex justify-center items-center mr-2">
-                    P
-                  </p>
-                  <p className="rounded-full p-3 bg-red-600 w-7 h-7 flex justify-center items-center mr-2">
-                    R
-                  </p>
-                  <p className="rounded-full p-3 bg-orange-600 w-7 h-7 flex justify-center items-center mr-2">
-                    J
-                  </p>
-                  <p className="rounded-full p-3 bg-yellow-500 w-7 h-7 flex justify-center items-center mr-2">
-                    S
-                  </p>
-                </div>
-              </div>
-              <div className="flex ">
-                <ArrowDownRight size={70} strokeWidth={0.5} />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          onClick={() => setPage("expierence")}
-          className="cursor-pointer mr-3 mb-3 grow w-full lg:w-auto hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1"
-        >
-          <div className="bg-black h-28 pt-4">
-            <div className="text-white  font-semibold pt-2 pb-4 px-5 flex justify-between items-center">
-              <div className="flex flex-col">
-                <div className="text-4xl mb-2">Experience</div>
-                <div className="flex font-medium text-lg">
-                  <p className="rounded-full p-3 bg-green-700 w-7 h-7 flex justify-center items-center mr-2">
-                    M
-                  </p>
-                  <p className="rounded-full p-3 bg-orange-600 w-7 h-7 flex justify-center items-center mr-2">
-                    Y
-                  </p>
-                  <p className="rounded-full p-3 bg-orange-600 w-7 h-7 flex justify-center items-center mr-2">
-                    E
-                  </p>
-                </div>
-              </div>
-              <div className="flex ">
-                <ArrowRight size={70} strokeWidth={0.5} />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          onClick={() => setPage("resume")}
-          className="cursor-pointer mr-3 mb-3 w-full lg:w-auto hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1"
-        >
-          <div className="bg-black h-28 pt-4">
-            <div className="text-white  font-semibold pt-2 pb-4 pr-1 px-5 flex justify-between items-center">
-              <div className="flex flex-col">
-                <div className="text-4xl mb-2">Resume</div>
-                <div className="flex font-medium text-lg">
-                  <p className="rounded-full p-3 bg-red-600 w-7 h-7 flex justify-center items-center mr-2">
-                    C
-                  </p>
-                  <p className="rounded-full p-3 bg-yellow-500 w-7 h-7 flex justify-center items-center mr-2">
-                    V
-                  </p>
-                </div>
-              </div>
-              <div className="flex ">
-                <ArrowUp size={70} strokeWidth={0.5} />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          onClick={() => setPage("contact")}
-          className="cursor-pointer mr-3 mb-3 w-full lg:w-auto hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1"
-        >
-          <div className="bg-black h-28 pt-4">
-            <div className="text-white font-semibold pt-2 pb-4 pr-1 px-5 flex justify-between items-center">
-              <div className="flex flex-col">
-                <div className="text-4xl mb-2">Contact</div>
-                <div className="flex font-medium text-lg">
-                  <p className="rounded-full p-3 bg-red-600 w-7 h-7 flex justify-center items-center mr-2">
-                    C
-                  </p>
-                  <p className="rounded-full p-3 bg-blue-600 w-7 h-7 flex justify-center items-center mr-2">
-                    T
-                  </p>
-                  <p className="rounded-full p-3 bg-green-700 w-7 h-7 flex justify-center items-center mr-2">
-                    M
-                  </p>
-                </div>
-              </div>
-              <div className="flex ">
-                <ArrowUpRight size={70} strokeWidth={0.5} />
-              </div>
-            </div>
-          </div>
-        </section>
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("about")}
+          >
+            <p>&nbsp;</p>
+            <p>About</p>
+          </li>
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("works")}
+          >
+            <p>About</p>
+            <p>Works</p>
+          </li>
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("resume")}
+          >
+            <p>Works</p>
+            <p>Resume</p>
+          </li>
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("expierence")}
+          >
+            <p>Resume</p>
+            <p>Experience</p>
+          </li>
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("contact")}
+          >
+            <p>Experience</p>
+            <p>Contact</p>
+          </li>
+          <li className="Words-line cursor-pointer">
+            <p>Contact</p>
+            <p>&nbsp;</p>
+          </li>
+        </motion.ul>
       </div>
 
-      <section className="bg-white border-2 border-black p-3 lg:p-10 mb-10 mt-5 mr-3 font-light">
-        {showContent()}
-      </section>
+      {/* mobile menu */}
+      <div className="lg:hidden flex flex-wrap uppercase font-bold p-3">
+        {menu.map((item, idx) => (
+          <div
+            key={idx}
+            onClick={() => setSelectedId(item)}
+            className="relative inline-block group mb-5 md:ml-5 text-[2.7rem] cursor-pointer"
+          >
+            <div className="absolute inset-0 bg-white transition-transform transform translate-x-2 translate-y-2 group-hover:translate-y-0 group-hover:translate-x-0"></div>
+
+            <div className="relative inline-block px-5 py-3 text-black font-bold tracking-widest uppercase border-2 border-black">
+              {item}
+            </div>
+          </div>
+        ))}
+
+        <div className="md:ml-5 mt-5 text-lg text-white">&copy; kien.app</div>
+      </div>
+
+      {/* main content */}
+      {!selectedId ? null : (
+        <motion.div
+          className={`${
+            selectedId ? "" : "hidden"
+          } fixed inset-0 w-full h-full z-10 bg-blue-500 bg-opacity-90 duration-300 overflow-y-auto`}
+        >
+          <AnimatePresence>
+            <motion.div
+              animate={{ x: [100, 0, 10], opacity: [0.6, 1] }}
+              transition={{ duration: 0.3 }}
+              className="relative group w-11/12 sm:9/12 lg:w-3/5 lg:mx-auto mx-0 sm:mx-auto lg:my-10 my-2"
+            >
+              <div className="absolute inset-0 bg-white transition-transform transform translate-x-2 translate-y-2 group-hover:translate-y-0 group-hover:translate-x-0"></div>
+              <div
+                className={`relative w-full inline-block font-bold tracking-widest border-2 border-black ${
+                  selectedId === "works" ? "p-0" : "p-5 lg:p-10"
+                }`}
+              >
+                <X
+                  onClick={() => setSelectedId(null)}
+                  size={15}
+                  stroke={0.1}
+                  className="z-10 cursor-pointer stroke-blue-600 hover:stroke-black transition absolute right-0 top-0 w-9 h-9 p-2"
+                />
+                {showContent()}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </motion.div>
+      )}
     </>
   );
 }

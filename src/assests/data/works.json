@@ -1,0 +1,177 @@
+[
+    {
+       "title":"Doutu.be",
+       "time":"2021",
+       "category":"design, code, marketing",
+       "link":"https://doutu.be",
+       "imgs":[
+          "https://cdn.dribbble.com/users/1808267/screenshots/5504036/media/c0f0fa0486019be5eb98e9bdaec9b70c.jpg?compress=1&resize=1600x1200",
+          "https://cdn.dribbble.com/users/746931/screenshots/14173499/media/77882eff9a752a5829ce3efd91c5f769.jpg?compress=1&resize=1600x1200"
+       ],
+       "desc":"Doutu.be is a short video social network. I worked with this site from idea to production. I do UX/UI design, develop Backend and Frontend. I'm working on mobile app.",
+       "tech":[
+          {
+             "backend":"NodeJs, Express"
+          },
+          {
+             "frontend":"ReactJs, TypeScript, TailwindCSS"
+          },
+          {
+             "mobile":"React Native"
+          },
+          {
+             "cloud":"AWS S3, AWS Lambda, Google API"
+          }
+       ]
+    },
+    {
+       "title":"WPGroupbuy",
+       "time":"2013",
+       "category":"design, code, marketing",
+       "link":"https://wpgroupbuy.com",
+       "imgs":[
+        "https://kien.app/images/wpg-main.jpg",
+        "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+       ],
+       "desc":"WPGroupbuy is WordPress Group Buying themes, plugin (based WooCommerce). Current WPG has 3 themes and a core plugin.",
+       "tech":[
+          {
+              "design": "Sketch, Photoshop"
+          },
+          {"code": "HTML/CSS/SCSS, JS, jQuery, PHP"},
+            {"themes":"3 fully responsive WooCommerce based WordPress themes"},
+            {"plugin": "Core WPGroupbuy Plugin"}
+       ]
+    },
+    {
+        "title":"Cinema Booking Web App",
+        "time":"2019",
+        "category":"design, code",
+        "link":"https://cinema.kien.app",
+        "imgs":[
+         "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
+         "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+        ],
+        "desc":"Develop a cinema booking web app with Angular",
+        "tech":[
+           {
+               "design": "Sketch, Photoshop"
+           },
+           {"code": "HTML/CSS/SCSS, Angular"}
+        ]
+     },
+    {
+       "title":"Singer's Websites",
+       "time":"2010-present",
+       "category":"design, code",
+       "link":"",
+       "imgs":[
+          "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
+          "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+       ],
+       "desc":"Design, develop websites for popular singers like Suboi, Ho Ngoc Ha, Pham Anh Khoa... and some music event websites.",
+       "tech":[
+          {
+             "code":"HTML/CSS/SCSS, Bootstrap, JS, jQuery, WordPress, PHP"
+          },
+          {
+             "software":"Photoshop"
+          }
+       ]
+    },
+    {
+        "title":"Car Dealers Websites",
+        "time":"2012-2014",
+        "category":"design, code",
+        "link":"",
+        "imgs":[
+           "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
+           "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+        ],
+        "desc":"Design, develop websites for car dealers.",
+        "tech":[
+           {
+              "code":"HTML/CSS/SCSS, Bootstrap, JS, jQuery, WordPress, PHP"
+           },
+           {
+              "software":"Photoshop"
+           }
+        ]
+     },
+     {
+        "title":"eCommerce website",
+        "time":"2018",
+        "category":"UX/UI Design",
+        "link": "https://dribbble.com/shots/5504036-eCommerce-website",
+        "imgs":[
+           "https://cdn.dribbble.com/users/1808267/screenshots/5504036/media/c0f0fa0486019be5eb98e9bdaec9b70c.jpg?compress=1&resize=1600x1200"
+        ],
+        "desc":"Design few pages for an eCommerce website. I do the PSD to HTML/CSS as well.",
+        "tech":[
+            {
+                "code":"Convert designs to HTML/CSS with fully responsive supported"
+             },
+           {
+              "design":"Sketch, Photoshop"
+           }
+        ]
+     },
+     {
+        "title":"Vietjet Air App UX/UI Redesign",
+        "time":"2017",
+        "category":"UX/UI Design",
+        "link": "https://www.behance.net/gallery/54629983/Vietjet-Air-App-UXUI-Redesign",
+        "imgs":[
+           "https://mir-s3-cdn-cf.behance.net/projects/max_808/26211854629983.Y3JvcCw5NjEsNzUyLDExLDA.jpg"
+        ],
+        "desc":"Redesign concept for Vietjet Air app. Mainly I redesign the booking process.",
+        "tech":[
+            {
+                "process":"Research about the current branding, design, typo, colors. Sketch few screens and then design"
+             },
+           {
+              "software":"Sketch, Photoshop"
+           }
+        ]
+     },
+     {
+        "title":"The Eggs's Story",
+        "time":"2018",
+        "category":"2D Motion Graphic",
+        "link": "https://www.behance.net/gallery/60698789/The-Eggss-Story",
+        "imgs":[
+           "https://mir-cdn.behance.net/v1/rendition/projects/max_808/cd344860698789.Y3JvcCwxMTg5LDkzMCw2MjIsMA.png"
+        ],
+        "desc":"I write the video script, design the characters and working with After Effects for animation",
+        "tech":[
+            {
+                "process":"After drawing the characters, I convert them to vector images and then animated them"
+             },
+           {
+              "software":"illustrator, After Effects"
+           },
+           {
+            "achievement":"I got the tropy for this video"
+         }
+        ]
+     },
+     {
+        "title":"Client's Websites",
+        "time":"2010-present",
+        "category":"design, code",
+        "link":"",
+        "imgs":[
+           "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
+           "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+        ],
+        "desc":"Design, develop corporate, eCommerce websites for many clients: Savico Invest, Nano Pharmacy Australia, Fujiwa, Nhat Huy Mobi, Orion New Tech...",
+        "tech":[
+           {
+              "code":"HTML/CSS/SCSS, Bootstrap, JS, jQuery, WordPress, PHP"
+           },
+           {
+              "software":"Photoshop"
+           }
+        ]
+     }
+ ]

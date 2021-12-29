@@ -1,66 +1,102 @@
 import React from "react";
+import { Briefcase, Clock } from "react-feather";
+import PageTitle from "../Components/pageTitle";
 
 export default function Experience() {
   const data = [
     {
-      time: "2021",
-      month: "present",
+      time: "2021 - present",
       company: "Doutu.be",
-      position: "Developer",
-      body: "Founded Doutu.be, a short video social network. I worked with this site from idea to production. I do UX/UI design, develop API backend (NodeJs, MongoDB, AWS, AWS Lambda) and Frontend development (ReactJs). I also do some DevOps jobs, deploy system to server.",
+      position: "FE, BE Developer",
+      img: "https://doutu.be/static/media/doutube_logo.68bb4630.svg",
+      body: "Founded Doutu.be, a short video social network. I worked with this site from idea to production. I do UX/UI design, develop API backend (NodeJs, MongoDB, AWS, AWS Lambda) and Frontend development (ReactJs). I also do some DevOps jobs, deploy the website to the server.",
     },
     {
-      time: "2017",
-      month: "- 2014",
-      company: "Otos JSC",
-      position: "Digital Marketing & Content Manager",
-      body: "Otos.vn is an automobile marketplace website, I helped company to build Marketing, Content team. Joining in product development process, business planning, online/offline/SEO marketing strategy. Working with Agencies, Investors, Partners, Car Dealers...",
+      time: "2014 - 2017",
+      company: "Otos",
+      position: "Digital Marketing Manager",
+      img: "https://otos.vn/ContentNew/images/logo.svg",
+      body: "Otos.vn is an automobile marketplace website, I helped the company to build Marketing, Content teams. Joining in the product development process, business planning, online/offline/SEO marketing strategy. Working with Agencies, Investors, Partners, Car Dealers...",
     },
     {
-      time: "2014",
-      month: "- 2012",
+      time: "2012 - 2014",
       company: "Savico",
-      position: "Developer",
-      body: "Join the first stage in Otos project development. Design the website’s structure, analyte competitors. I also developed subsidiaries’s websites and internal information system.",
+      position: "Website Developer",
+      img: "https://savico.com.vn/Content/theme_btq/images/logo.svg",
+      body: "Join the first stage in Otos project development. Design the website’s structure, analyze competitors. I also developed subsidiaries’ websites and internal information systems.",
     },
     {
-      time: "2013",
-      month: "present",
-      company: "WPGroupbuy.com",
+      time: "2013 - present",
+      company: "WPGroupbuy",
       position: "WordPress Theme, Plugin Developer",
-      body: "Start new WordPress Theme business with a Group buying theme, plugin. Worked from planning, designing, developing and marketing.",
+      img: "https://kien.app/images/wpgroupbuy_logo.jpg",
+      body: "Start a new WordPress Theme business with a Group buying theme, plugin. Worked from planning, designing, developing, and marketing.",
     },
     {
-      time: "2012",
-      month: "- 2006",
-      company: "MusicFaces JSC",
+      time: "2010 - 2012",
+      company: "MusicFaces",
       position: "Website Developer, Designer",
-      body: "Design, develop websites for popular singers like Suboi, Ho Ngoc Ha, Pham Anh Khoa... and some event websites. I also worked as a webmaster and joining in the development for Online music website.",
+      img: "",
+      body: "Design, develop websites for popular singers like Suboi, Ho Ngoc Ha, Pham Anh Khoa... and some event websites. I also worked as a webmaster and joined in the development for an Online music website.",
     },
     {
-      time: "2006",
-      month: "present",
+      time: "2006 - present",
       company: "Freelancer",
       position: "Website Developer",
-      body: "Design, develop corporate, ecommerce websites for many clients: Savico Invest, Nano Pharmacy Australia, Fujiwa, Nhat Huy Mobi, Orion New Tech...",
+      img: "",
+      body: "Design, develop corporate, eCommerce websites for many clients: Savico Invest, Nano Pharmacy Australia, Fujiwa, Nhat Huy Mobi, Orion New Tech...",
     },
   ];
 
   return (
-    <div className="">
-      <div className="relative text-left">
+    <div className="font-light text-gray-600">
+      <PageTitle title="My Resume" />
+
+      <div className="flex justify-between flex-wrap">
         {data.map((item, idx) => {
           return (
-            <div key={idx} className="flex relative">
-              <div className="hidden md:block min-w-20">
-                <div className="font-bold italic">{item.time}</div>
-                <div className="md:flex space-x-1 text-xs">{item.month}</div>
+            <div
+              key={idx}
+              className="w-full p-4 lg:p-8 overflow-hidden border border-black hover:border-blue-600 transition mb-8 last:mb-0"
+            >
+              <div className="mb-3 lg:mb-0 lg:h-20 justify-between">
+                <div className="">
+                  <h5 className="text-xl font-bold text-gray-900">
+                    {item.position}
+                  </h5>
+                  <div className="flex items-center mt-2 text-xs font-medium text-gray-600">
+                    <span className="flex items-center text-gray-500 font-light">
+                      <Briefcase
+                        size={12}
+                        stroke={0.5}
+                        className="stroke-gray-500 mr-1"
+                      />
+                      <span className="font-normal">{item.company}</span>
+                    </span>
+                    <span className="flex items-center text-gray-500 font-light ml-4">
+                      <Clock
+                        size={10}
+                        stroke={0.5}
+                        className="stroke-gray-500 mr-1"
+                      />{" "}
+                      {item.time}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="hidden ml-3">
+                  <img
+                    className="object-cover w-full h-10 rounded-lg object-fit"
+                    src={item.img}
+                    alt={item.company}
+                  />
+                </div>
               </div>
 
-              <div className="ml-10 pr-3">
-                <div className="font-bold">{item.position}</div>
-                <div className="italic md:mb-4 text-xs">{item.company}</div>
-                <div className="mb-10 text-sm">{item.body}</div>
+              <div className="">
+                <div className="text-gray-800 text-normal lg:leading-6">
+                  {item.body}
+                </div>
               </div>
             </div>
           );
