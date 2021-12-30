@@ -5,8 +5,11 @@
        "category":"design, code, marketing",
        "link":"https://doutu.be",
        "imgs":[
-          "https://cdn.dribbble.com/users/1808267/screenshots/5504036/media/c0f0fa0486019be5eb98e9bdaec9b70c.jpg?compress=1&resize=1600x1200",
-          "https://cdn.dribbble.com/users/746931/screenshots/14173499/media/77882eff9a752a5829ce3efd91c5f769.jpg?compress=1&resize=1600x1200"
+          "https://kien.app/images/doutube1.jpg",
+          "https://kien.app/images/doutube2.jpg",
+          "https://kien.app/images/doutube3.jpg",
+          "https://kien.app/images/doutube4.jpg",
+          "https://kien.app/images/doutube_mb.jpg"
        ],
        "desc":"Doutu.be is a short video social network. I worked with this site from idea to production. I do UX/UI design, develop Backend and Frontend. I'm working on the mobile apps.",
        "tech":[
@@ -30,8 +33,9 @@
        "category":"design, code, marketing",
        "link":"https://wpgroupbuy.com",
        "imgs":[
-        "https://kien.app/images/wpg-main.jpg",
-        "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+        "https://kien.app/images/wpg4.jpg",
+        "https://kien.app/images/wpg3.jpg",
+        "https://kien.app/images/wpg1.jpg"
        ],
        "desc":"WPGroupbuy is WordPress Group Buying themes, plugin (based WooCommerce). The current WPG has 3 themes and a core plugin.",
        "tech":[
@@ -49,8 +53,8 @@
         "category":"design, code",
         "link":"https://cinema.kien.app",
         "imgs":[
-         "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
-         "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+         "https://kien.app/images/cinema_web.jpg",
+         "https://kien.app/images/cinema_mobile.jpg"
         ],
         "desc":"Develop a cinema booking web app with Angular",
         "tech":[
@@ -66,8 +70,9 @@
        "category":"design, code",
        "link":"",
        "imgs":[
-          "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
-          "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+          "https://kien.app/images/suboi_web1.jpg",
+          "https://kien.app/images/suboi_web2.jpg",
+          "https://kien.app/images/suboi_web3.jpg"
        ],
        "desc":"Design, develop websites for popular singers like Suboi, Ho Ngoc Ha, Pham Anh Khoa... and some music event websites.",
        "tech":[
@@ -75,7 +80,7 @@
              "code":"HTML/CSS/SCSS, Bootstrap, JS, jQuery, WordPress, PHP"
           },
           {
-             "software":"Photoshop"
+             "software":"Photoshop, Flash"
           }
        ]
     },
@@ -85,10 +90,9 @@
         "category":"design, code",
         "link":"",
         "imgs":[
-           "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
-           "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+           "https://kien.app/images/svc_sgns.jpg"
         ],
-        "desc":"Design, develop websites for car dealers.",
+        "desc":"Design, develop websites for car dealers like Toyota, Suzuki, Hyundai...",
         "tech":[
            {
               "code":"HTML/CSS/SCSS, Bootstrap, JS, jQuery, WordPress, PHP"
@@ -104,7 +108,7 @@
         "category":"UX/UI Design",
         "link": "https://dribbble.com/shots/5504036-eCommerce-website",
         "imgs":[
-           "https://cdn.dribbble.com/users/1808267/screenshots/5504036/media/c0f0fa0486019be5eb98e9bdaec9b70c.jpg?compress=1&resize=1600x1200"
+           "https://kien.app/images/ecom.webp"
         ],
         "desc":"Design few pages for an eCommerce website. I do the PSD to HTML/CSS as well.",
         "tech":[
@@ -122,7 +126,7 @@
         "category":"UX/UI Design",
         "link": "https://www.behance.net/gallery/54629983/Vietjet-Air-App-UXUI-Redesign",
         "imgs":[
-           "https://mir-s3-cdn-cf.behance.net/projects/max_808/26211854629983.Y3JvcCw5NjEsNzUyLDExLDA.jpg"
+           "https://kien.app/images/vj.jpg"
         ],
         "desc":"Redesign concept for Vietjet Air app. Mainly I redesign the booking process.",
         "tech":[
@@ -140,7 +144,7 @@
         "category":"2D Motion Graphic",
         "link": "https://www.behance.net/gallery/60698789/The-Eggss-Story",
         "imgs":[
-           "https://mir-cdn.behance.net/v1/rendition/projects/max_808/cd344860698789.Y3JvcCwxMTg5LDkzMCw2MjIsMA.png"
+           "https://kien.app/images/egg.png"
         ],
         "desc":"I write the video script, design the characters and work with After Effects for animation",
         "tech":[
@@ -161,8 +165,7 @@
         "category":"design, code",
         "link":"",
         "imgs":[
-           "https://wpgroupbuy.com/wp-content/uploads/2021/11/Safari.jpg",
-           "https://wpgroupbuy.com/wp-content/uploads/2021/11/WebPagePresentation4-1.png"
+           "https://kien.app/images/web_goopen.jpg"
         ],
         "desc":"Design, develop corporate, eCommerce websites for many clients: Savico Invest, Nano Pharmacy Australia, Fujiwa, Nhat Huy Mobi, Orion New Tech...",
         "tech":[

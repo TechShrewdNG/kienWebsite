@@ -91,3 +91,30 @@ body {
 .content {
   font-family: "Helvetica", Arial, sans-serif;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .Words {
+    font-size: 50px;
+  }
+  .Words-line {
+    height: 38px;
+  }
+  .Words p {
+    line-height: 40px;
+  }
+  .Words-line:nth-child(2) {
+    left: 51px;
+  }
+  .Words-line:nth-child(3) {
+    left: 69px;
+  }
+  .Words-line:nth-child(4) {
+    left: 88px;
+  }
+  .Words-line:nth-child(5) {
+    left: 106px;
+  }
+  .Words-line:nth-child(6) {
+    left: 126px;
+  }
+}

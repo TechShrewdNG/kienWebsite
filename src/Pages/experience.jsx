@@ -8,42 +8,45 @@ export default function Experience() {
       time: "2021 - present",
       company: "Doutu.be",
       position: "FE, BE Developer",
-      img: "https://doutu.be/static/media/doutube_logo.68bb4630.svg",
+      img: "https://kien.app/images/doutube_logo.svg",
+      size: "8",
       body: "Founded Doutu.be, a short video social network. I worked with this site from idea to production. I do UX/UI design, develop API backend (NodeJs, MongoDB, AWS, AWS Lambda) and Frontend development (ReactJs). I also do some DevOps jobs, deploy the website to the server.",
     },
     {
       time: "2014 - 2017",
       company: "Otos",
       position: "Digital Marketing Manager",
-      img: "https://otos.vn/ContentNew/images/logo.svg",
+      img: "https://kien.app/images/otos_logo.svg",
       body: "Otos.vn is an automobile marketplace website, I helped the company to build Marketing, Content teams. Joining in the product development process, business planning, online/offline/SEO marketing strategy. Working with Agencies, Investors, Partners, Car Dealers...",
     },
     {
       time: "2012 - 2014",
       company: "Savico",
       position: "Website Developer",
-      img: "https://savico.com.vn/Content/theme_btq/images/logo.svg",
+      img: "https://kien.app/images/savico_logo.svg",
       body: "Join the first stage in Otos project development. Design the website’s structure, analyze competitors. I also developed subsidiaries’ websites and internal information systems.",
     },
     {
       time: "2013 - present",
       company: "WPGroupbuy",
       position: "WordPress Theme, Plugin Developer",
-      img: "https://kien.app/images/wpgroupbuy_logo.jpg",
+      img: "https://kien.app/images/wpgroupbuy_logo.svg",
+      size: "8",
       body: "Start a new WordPress Theme business with a Group buying theme, plugin. Worked from planning, designing, developing, and marketing.",
     },
     {
       time: "2010 - 2012",
       company: "MusicFaces",
       position: "Website Developer, Designer",
-      img: "",
+      img: "https://kien.app/images/musicfaces_logo.png",
       body: "Design, develop websites for popular singers like Suboi, Ho Ngoc Ha, Pham Anh Khoa... and some event websites. I also worked as a webmaster and joined in the development for an Online music website.",
     },
     {
       time: "2006 - present",
       company: "Freelancer",
       position: "Website Developer",
-      img: "",
+      img: "https://kien.app/images/freelance.png",
+      size: "9",
       body: "Design, develop corporate, eCommerce websites for many clients: Savico Invest, Nano Pharmacy Australia, Fujiwa, Nhat Huy Mobi, Orion New Tech...",
     },
   ];
@@ -86,7 +89,9 @@ export default function Experience() {
 
                 <div className="hidden lg:block ml-3">
                   <img
-                    className="object-cover w-full h-10 rounded-lg object-fit"
+                    className={`object-cover w-auto ${
+                      item.size ? `h-${item.size}` : "h-12"
+                    }`}
                     src={item.img}
                     alt={item.company}
                   />
