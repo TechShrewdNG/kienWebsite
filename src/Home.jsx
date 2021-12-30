@@ -46,7 +46,6 @@ export default function Home() {
             className="Words-line cursor-pointer"
             onClick={() => setSelectedId("about")}
           >
-            <p>&nbsp;</p>
             <p>About</p>
           </li>
           <li
