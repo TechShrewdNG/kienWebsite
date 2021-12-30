@@ -68,7 +68,7 @@ body {
   left: 174px;
 }
 
-p {
+.Words p {
   height: 50px;
   line-height: 45px;
   /* padding: 0 10px; */
@@ -82,7 +82,7 @@ p {
 ** The hover interaction
 */
 .Words:hover p {
-  transform: translate3d(0, -50px, 0);
+  /* transform: translate3d(0, -50px, 0); */
 }
 .Words-line:hover {
   color: #222;
@@ -90,12 +90,4 @@ p {
 
 .content {
   font-family: "Helvetica", Arial, sans-serif;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .Words-line:nth-child(odd),
-  .Words-line:nth-child(even),
-  .Words:hover p .Words {
-    transform: unset !important;
-  }
 }

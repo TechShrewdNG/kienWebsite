@@ -20,7 +20,7 @@ export default function About() {
         I have a technical background and graduated from HCMC UIT. But I also
         have a passion for colors, images, drawing so my first career is about
         designing, photoshop. I've designed websites since the 2000s, and I
-        always keep updating my skills. For now, I'd love to resolve people's
+        always keep upgrading my skills. For now, I'd love to resolve people's
         issues through software, app.
       </div>
     </div>

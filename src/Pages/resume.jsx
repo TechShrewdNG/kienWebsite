@@ -118,7 +118,7 @@ export default function Resume() {
               key={idx}
               className="w-full p-4 lg:p-8 overflow-hidden border border-black hover:border-blue-600 transition mb-8 last:mb-0"
             >
-              <div className="hidden md:block ">
+              <div className="">
                 <div className="font-bold uppercase mb-5">{item.field}</div>
               </div>
 

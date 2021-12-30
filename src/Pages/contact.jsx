@@ -5,10 +5,9 @@ export default function Contact() {
     <div className="font-light text-gray-600 text-center">
       <div className="mb-6 lg:leading-6">
         If you have any idea or request, please contact me an email at
-        <br />
-        <span className="text-blue-500 text-lg font-normal pt-2">
+        <div className="text-blue-500 text-lg font-normal pt-3 lg:pt-2">
           trungkien@gmail.com
-        </span>
+        </div>
       </div>
       <div className="lg:leading-6">Or follow me</div>
       <div className="flex justify-center items-center mt-2">

@@ -33,11 +33,9 @@ export default function Home() {
     duration: 0.7,
   };
 
-  const menu = ["about", "works", "resume", "experience", "contact"];
-
   return (
     <>
-      <div className="hidden lg:flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-screen">
         <motion.ul
           initial="hidden"
           animate="visible"
@@ -53,61 +51,46 @@ export default function Home() {
           </li>
           <li
             className="Words-line cursor-pointer"
-            onClick={() => setSelectedId("works")}
+            onClick={() => setSelectedId("about")}
           >
             <p>About</p>
             <p>Works</p>
           </li>
           <li
             className="Words-line cursor-pointer"
-            onClick={() => setSelectedId("resume")}
+            onClick={() => setSelectedId("works")}
           >
             <p>Works</p>
             <p>Resume</p>
           </li>
           <li
             className="Words-line cursor-pointer"
-            onClick={() => setSelectedId("experience")}
+            onClick={() => setSelectedId("resume")}
           >
             <p>Resume</p>
             <p>Experience</p>
           </li>
           <li
             className="Words-line cursor-pointer"
-            onClick={() => setSelectedId("contact")}
+            onClick={() => setSelectedId("experience")}
           >
             <p>Experience</p>
             <p>Contact</p>
           </li>
-          <li className="Words-line cursor-pointer">
+          <li
+            className="Words-line cursor-pointer"
+            onClick={() => setSelectedId("contact")}
+          >
             <p>Contact</p>
             <p>&nbsp;</p>
           </li>
         </motion.ul>
       </div>
 
-      {/* mobile menu */}
-      <div className="lg:hidden flex flex-wrap uppercase font-bold p-3">
-        {menu.map((item, idx) => (
-          <div
-            key={idx}
-            onClick={() => setSelectedId(item)}
-            className="relative inline-block group mb-5 md:ml-5 text-[2.7rem] cursor-pointer"
-          >
-            <div className="absolute inset-0 bg-white transition-transform transform translate-x-2 translate-y-2 group-hover:translate-y-0 group-hover:translate-x-0"></div>
-
-            <div className="relative inline-block px-5 py-3 text-black font-bold tracking-widest uppercase border-2 border-black">
-              {item}
-            </div>
-          </div>
-        ))}
-
-        <div className="md:ml-5 mt-5 text-lg text-white">&copy; kien.app</div>
-      </div>
-
       {/* main content */}
       {!selectedId ? null : (
         <motion.div
+          // onClick={() => setSelectedId("")}
           className={`${
             selectedId ? "" : "hidden"
           } fixed inset-0 w-full h-full z-10 bg-blue-500 bg-opacity-90 duration-300 overflow-y-auto`}
@@ -116,7 +99,7 @@ export default function Home() {
             <motion.div
               animate={{ x: [100, 0, 10], opacity: [0.6, 1] }}
               transition={{ duration: 0.3 }}
-              className="relative group w-11/12 sm:9/12 lg:w-3/5 lg:mx-auto mx-0 sm:mx-auto lg:my-10 my-2"
+              className="relative group w-11/12 sm:9/12 lg:w-4/5 xl:w-3/5 lg:mx-auto mx-0 sm:mx-auto lg:my-10 my-2"
             >
               <div className="absolute inset-0 bg-white transition-transform transform translate-x-2 translate-y-2 group-hover:translate-y-0 group-hover:translate-x-0"></div>
               <div

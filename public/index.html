@@ -8,8 +8,30 @@
       name="description"
       content="Personal website of Kien Pham, a digital products creator"
     />
+    <meta
+      name="keywords"
+      content="html, css, scss, javascript, react native, reactjs, developer, marketing manager, freelancer"
+    />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Kien Pham</title>
+    <meta property="og:title" content="Kien Pham Profile" />
+    <meta property="og:url" content="https://kien.app" />
+    <meta property="og:image" content="https://kien.app/k-icon.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QBYE2EELBS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QBYE2EELBS");
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
