@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { X } from "react-feather";
 import About from "./Pages/about";
 import Contact from "./Pages/contact";
@@ -6,9 +6,31 @@ import Experience from "./Pages/experience";
 import Resume from "./Pages/resume";
 import Works from "./Pages/works";
 import { motion, AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 
-export default function Home() {
+export default function Home(props) {
   const [selectedId, setSelectedId] = useState(null);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escCloseModal, false);
+    window.history.pushState(null, null, window.location.pathname);
+    window.addEventListener("popstate", onBackButtonEvent);
+    return () => {
+      document.removeEventListener("keydown", escCloseModal, false);
+      window.removeEventListener("popstate", onBackButtonEvent);
+    };
+  }, []);
+
+  const escCloseModal = useCallback((event) => {
+    if (event.keyCode === 27) {
+      setSelectedId("");
+    }
+  }, []);
+
+  const onBackButtonEvent = (e) => {
+    e.preventDefault();
+    setSelectedId("");
+  };
 
   const showContent = () => {
     switch (selectedId) {
@@ -46,6 +68,7 @@ export default function Home() {
             className="Words-line cursor-pointer"
             onClick={() => setSelectedId("about")}
           >
+            <p>&nbsp;</p>
             <p>About</p>
           </li>
           <li

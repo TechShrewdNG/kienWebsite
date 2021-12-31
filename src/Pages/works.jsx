@@ -30,7 +30,13 @@ function PrevArrow(props) {
 
 export default function Works() {
   useEffect(() => {
+    document.addEventListener("popstate", (event) => {
+      console.log("event");
+      // alert("You message");
+    });
+
     return () => {
+      // document.removeEventListener("visibilitychange", pausePlayVideo, false)
       setIsOpen("");
     };
   }, []);
@@ -42,6 +48,7 @@ export default function Works() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    lazyload: true,
     // adaptiveHeight: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,

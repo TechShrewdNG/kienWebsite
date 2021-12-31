@@ -72,7 +72,7 @@ export default function Resume() {
         {
           skill: "Able to communicate in English",
         },
-        { skill: "Can read/write technical document in English" },
+        { skill: "Can read/write the technical document in English" },
       ],
     },
     {

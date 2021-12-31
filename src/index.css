@@ -95,8 +95,8 @@ body {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .Words {
     font-size: 40px;
-    margin-left: 30px;
-    margin-top: -100px;
+    margin-left: 10px;
+    margin-top: -150px;
   }
   .Words-line {
     height: 31px;
@@ -118,7 +118,7 @@ body {
     left: 80px;
   }
   .Words-line:nth-child(6) {
-    left: 126px;
+    left: 100px;
   }
 
   .Words-line:nth-child(odd) {
