@@ -14,6 +14,7 @@ export default function Contact() {
         <a
           href="https://www.linkedin.com/in/t-kien/"
           target="_blank"
+          rel="noreferrer"
           className="mr-3"
         >
           <img
@@ -26,6 +27,7 @@ export default function Contact() {
         <a
           href="https://facebook.com/trungkien"
           target="_blank"
+          rel="noreferrer"
           className="mr-3"
         >
           <img
@@ -35,7 +37,12 @@ export default function Contact() {
           />
         </a>
 
-        <a href="https://instagram.com/tkien" target="_blank" className="mr-3">
+        <a
+          href="https://instagram.com/tkien"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-3"
+        >
           <img
             alt="svgImg"
             className="h-8 hover:bg-gray-50 rounded"
@@ -46,6 +53,7 @@ export default function Contact() {
         <a
           href="https://www.tiktok.com/@tkien"
           target="_blank"
+          rel="noreferrer"
           className="mr-3"
         >
           <img
@@ -58,6 +66,7 @@ export default function Contact() {
         <a
           href="https://www.behance.net/kien-pham"
           target="_blank"
+          rel="noreferrer"
           className="mr-3"
         >
           <img
@@ -70,6 +79,7 @@ export default function Contact() {
         <a
           href="https://dribbble.com/trungkien"
           target="_blank"
+          rel="noreferrer"
           className="mr-3"
         >
           <img
@@ -79,7 +89,12 @@ export default function Contact() {
           />
         </a>
 
-        <a href="https://github.com/kien-pham" target="_blank" className="mr-3">
+        <a
+          href="https://github.com/kien-pham"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-3"
+        >
           <img
             alt="svgImg"
             className="h-7 hover:bg-gray-50 rounded"

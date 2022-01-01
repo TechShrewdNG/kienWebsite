@@ -6,7 +6,7 @@ export default function About() {
       <div className="lg:leading-6 mb-6 flex flex-col items-center justify-center">
         <img
           alt="Kien Pham"
-          src="https://mir-s3-cdn-cf.behance.net/user/230/f3ebda5989353.60dec130c8995.jpg"
+          src="https://kien.app/images/avatar.jpg"
           className="rounded-full w-24 h-24 mb-4 border-2 border-black hover:brightness-150 transition"
         />
         <span className="text-xl">Hi, I'm Kien</span>
