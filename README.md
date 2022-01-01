@@ -15,3 +15,5 @@ After clone it, in the project directory, you can run:
 - Edit Download CV link on /Components/pageTitle.jsx
 - All pages are in Pages/ folder
 - Change data (JSON files) on /assests/data/
+- Edit blue background color on index.css, body section, line 11
+- If you want the menu hover effect, remove comment on line 80, index.css (transform: translate3d(0, -50px, 0))
